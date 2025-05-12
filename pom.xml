@@ -25,7 +25,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<!-- <flink.version>0.10.1-hadoop1</flink.version> -->
 		<scala.compat.version>2.10</scala.compat.version>
-		<flink.version>1.0.3</flink.version>
+		<flink.version>1.0.3-hadoop1</flink.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -183,8 +183,7 @@
 							</filters>
 							<transformers>
 								<!-- add Main-Class to manifest file -->
-								<transformer
-									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
 									<mainClass>tech.sda.starter.flink.WordCount</mainClass>
 								</transformer>
 							</transformers>
